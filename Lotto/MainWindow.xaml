@@ -25,25 +25,27 @@
             <Button x:Name="btnUKLotto" Content="UK" Height="26" Margin="5" VerticalAlignment="Top" Width="75"/>
         </DockPanel>
         <DockPanel HorizontalAlignment="Left" LastChildFill="False" Margin="20,10" Grid.Row="3" VerticalAlignment="Top" >
-            <Label x:Name="lbl1" Width="50" Content="1" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <Label x:Name="lbl2" Width="50" Content="2" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <Label x:Name="lbl3" Width="50" Content="3" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <Label x:Name="lbl4" Width="50" Content="4" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <Label x:Name="lbl5"  Width="50" Content="5" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <Label x:Name="lbl6"  Width="50" Content="6" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <Label x:Name="lblBonus" Width="50" Content="Bonus" Margin="10,5" Height="25" VerticalAlignment="Center"/>
+            <Label x:Name="lbl1" Width="50" Content="1" HorizontalContentAlignment="Center" Margin="10,5" Height="25" VerticalAlignment="Center"/>
+            <Label x:Name="lbl2" Width="50" Content="2" HorizontalContentAlignment="Center" Margin="10,5" Height="25" VerticalAlignment="Center"/>
+            <Label x:Name="lbl3" Width="50" Content="3" HorizontalContentAlignment="Center" Margin="10,5" Height="25" VerticalAlignment="Center"/>
+            <Label x:Name="lbl4" Width="50" Content="4" HorizontalContentAlignment="Center" Margin="10,5" Height="25" VerticalAlignment="Center"/>
+            <Label x:Name="lbl5"  Width="50" Content="5" HorizontalContentAlignment="Center" Margin="10,5" Height="25" VerticalAlignment="Center"/>
+            <Label x:Name="lbl6"  Width="50" Content="6" HorizontalContentAlignment="Center" Margin="10,5" Height="25" VerticalAlignment="Center"/>
+            <Label x:Name="lblBonus" Width="50" Content="Bonus" HorizontalContentAlignment="Center" Margin="10,5" Height="25" VerticalAlignment="Center"/>
         </DockPanel>
         <DockPanel HorizontalAlignment="Left" LastChildFill="False" Margin="20,10" Grid.Row="4" VerticalAlignment="Top" >
-            <TextBox x:Name="tbxResult1" Width="50" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <TextBox x:Name="tbxResult2" Width="50" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <TextBox x:Name="tbxResult3" Width="50" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <TextBox x:Name="tbxResult4" Width="50" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <TextBox x:Name="tbxResult5" Width="50" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <TextBox x:Name="tbxResult6" Width="50" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-            <TextBox x:Name="tbxResultBonus" Width="50" Margin="10,5" Height="25" VerticalAlignment="Center"/>
-
-
+            <TextBox x:Name="tbxResult1" Width="50" Margin="10,5" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbxResult2" Width="50" Margin="10,5" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbxResult3" Width="50" Margin="10,5" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbxResult4" Width="50" Margin="10,5" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbxResult5" Width="50" Margin="10,5" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbxResult6" Width="50" Margin="10,5" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbxResultBonus" Width="50" Margin="10,5" VerticalAlignment="Center"/>
         </DockPanel>
+        <DockPanel Grid.Row="5">
+            <Button x:Name="btnClose" Content="Close" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10,5" Width="75"/>
+        </DockPanel>
+       
 
     </Grid>
 </Window>
