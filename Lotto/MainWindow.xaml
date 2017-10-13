@@ -21,8 +21,8 @@
         <Label x:Name="lblRandomHeading" Content="Randomly selected numbers" HorizontalAlignment="Left" Margin="5" Grid.Row="2" VerticalAlignment="Center"/>
 
         <DockPanel HorizontalAlignment="Right" LastChildFill="False" Grid.Row="1"  VerticalAlignment="Center" Width="206">
-            <Button x:Name="btnIrishLotto" Content="Irish" Height="26" Margin="5" VerticalAlignment="Center" Width="75"/>
-            <Button x:Name="btnUKLotto" Content="UK" Height="26" Margin="5" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="btnIrishLotto" Content="Irish" Height="26" Margin="5" VerticalAlignment="Center" Width="75" Click="btnIrishLotto_Click"/>
+            <Button x:Name="btnUKLotto" Content="UK" Height="26" Margin="5" VerticalAlignment="Top" Width="75" Click="btnUKLotto_Click"/>
         </DockPanel>
         <DockPanel HorizontalAlignment="Left" LastChildFill="False" Margin="20,10" Grid.Row="3" VerticalAlignment="Top" >
             <Label x:Name="lbl1" Width="50" Content="1" HorizontalContentAlignment="Center" Margin="10,5" Height="25" VerticalAlignment="Center"/>
