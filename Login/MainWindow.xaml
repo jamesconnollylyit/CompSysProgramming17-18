@@ -19,12 +19,77 @@
             <RowDefinition Height="25*" />
         </Grid.RowDefinitions>
         <Label x:Name="lblHeading" FontSize="24" Content="Please login to access the application" HorizontalAlignment="Left" Margin="50,26,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="438"/>
-        <Label x:Name="lblUsername" Content="User name" Grid.Column="1" HorizontalAlignment="Left" Margin="10,23,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbxUsername" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,27,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lblPassword" Content="Password" Grid.Column="1" HorizontalAlignment="Left" Margin="10,25,0,0" Grid.Row="2" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbxPassword" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,25,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnCancel" Content="Cancel" Grid.Column="2" HorizontalAlignment="Left" Margin="10,29,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
-        <Button x:Name="btnLogin" Content="Login" Grid.Column="2" HorizontalAlignment="Left" Margin="112,29,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Click="btnLogin_Click"/>
-        <PasswordBox x:Name="tbxPasswordBox" Grid.Column="2" HorizontalAlignment="Left" Margin="10,72,0,0" Grid.Row="2" VerticalAlignment="Top" Width="135" Height="20" Grid.RowSpan="2"/>
+        <Label x:Name="lblUsername" Content="User name" Grid.Column="1" HorizontalAlignment="Left" Margin="116,24,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxUsername" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,27,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+        <Label x:Name="lblPassword" Content="Password" Grid.Column="1" HorizontalAlignment="Left" Margin="123,25,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        
+        <Button 
+                    Name="btnCancel"
+                    Margin="0,0,5,0"
+                    Grid.Row="3"
+            Grid.Column="1"
+                    Click="btnCancel_Click"
+                    HorizontalAlignment="Right" VerticalAlignment="Center"
+                    Height="45"                     
+                    Width="120">
+            <DockPanel Height="45" Width="120" ToolTip="Select this option to cancel login">
+                <TextBlock 
+                        x:Name="lblCancel" 
+                        Margin="5,10,0,0" 
+                        TextWrapping="Wrap" 
+                        FontSize="16" 
+                        TextAlignment="Left" 
+                        Foreground="Black" 
+                        Height="45" 
+                        
+                        Width="60">Cancel</TextBlock>
+                <Image Source="Images/cross.png" Visibility="Visible" Stretch="Uniform" Width="50" Height="50" VerticalAlignment="Top" Margin="7,1,0,0">
+                    <Image.OpacityMask>
+                        <RadialGradientBrush>
+                            <GradientStop Color="#FF000000" Offset="0"/>
+                            <GradientStop Color="#00FFFFFF" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Image.OpacityMask>
+                </Image>
+            </DockPanel>
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="5"/>
+            </Button.Effect>
+
+        </Button>
+        <Button 
+                    Name="btnLogin"
+                    Margin="0,0,15,0"
+                    Grid.Row="3"
+            Grid.Column="2"
+                    Click="btnLogin_Click"
+                    HorizontalAlignment="Right" VerticalAlignment="Center"
+                    Height="45"                     
+                    Width="120">
+            <DockPanel Height="45" Width="120" ToolTip="Select this option to log into the application">
+                <TextBlock 
+                        x:Name="lblAdmin" 
+                        Margin="5,10,0,0" 
+                        TextWrapping="Wrap" 
+                        FontSize="16" 
+                        TextAlignment="Left" 
+                        Foreground="Black" 
+                        Height="45"                        
+                        Width="60">Login</TextBlock>
+                <Image Source="Images/tick.png" Visibility="Visible" Stretch="Uniform" Width="50" Height="50" VerticalAlignment="Top" Margin="7,1,0,0">
+                    <Image.OpacityMask>
+                        <RadialGradientBrush>
+                            <GradientStop Color="#FF000000" Offset="0"/>
+                            <GradientStop Color="#00FFFFFF" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Image.OpacityMask>
+                </Image>
+            </DockPanel>
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="5"/>
+            </Button.Effect>
+        </Button>
+       
+        <PasswordBox x:Name="tbxPasswordBox" Grid.Column="2" HorizontalAlignment="Left" Margin="10,25,0,0" Grid.Row="2" VerticalAlignment="Top" Width="135" Height="26"/>
     </Grid>
 </Window>
