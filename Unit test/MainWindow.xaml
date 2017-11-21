@@ -1,0 +1,21 @@
+﻿<Window x:Class="Unit_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unit_test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" Content="Number addition" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Width="161"/>
+        <Label x:Name="label1" Content="First number" HorizontalAlignment="Left" Margin="24,81,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label x:Name="label2" Content="Second number" HorizontalAlignment="Left" Margin="24,136,0,0" VerticalAlignment="Top" Width="119"/>
+        <TextBox x:Name="tbxFirstNumber" HorizontalAlignment="Left" Height="23" Margin="160,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxSecondNumber" HorizontalAlignment="Left" Height="23" Margin="160,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="321,273,0,0" VerticalAlignment="Top" Width="75" Click="btnAdd_Click"/>
+        <Label x:Name="label3" Content="Total" HorizontalAlignment="Left" Margin="24,206,0,0" VerticalAlignment="Top" Width="119"/>
+        <TextBox x:Name="tbxTotal" HorizontalAlignment="Left" Height="23" Margin="160,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="416,273,0,0" VerticalAlignment="Top" Width="75" Click="btnClose_Click"/>
+
+    </Grid>
+</Window>
