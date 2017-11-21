@@ -10,8 +10,8 @@
         <Label x:Name="label" Content="Number addition" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Width="161"/>
         <Label x:Name="label1" Content="First number" HorizontalAlignment="Left" Margin="24,81,0,0" VerticalAlignment="Top" Width="119"/>
         <Label x:Name="label2" Content="Second number" HorizontalAlignment="Left" Margin="24,136,0,0" VerticalAlignment="Top" Width="119"/>
-        <TextBox x:Name="tbxFirstNumber" HorizontalAlignment="Left" Height="23" Margin="160,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbxSecondNumber" HorizontalAlignment="Left" Height="23" Margin="160,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxFirstNumber" HorizontalAlignment="Left" Height="23" Margin="160,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tbxFirstNumber_TextChanged"/>
+        <TextBox x:Name="tbxSecondNumber" HorizontalAlignment="Left" Height="23" Margin="160,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tbxSecondNumber_TextChanged"/>
         <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="321,273,0,0" VerticalAlignment="Top" Width="75" Click="btnAdd_Click"/>
         <Label x:Name="label3" Content="Total" HorizontalAlignment="Left" Margin="24,206,0,0" VerticalAlignment="Top" Width="119"/>
         <TextBox x:Name="tbxTotal" HorizontalAlignment="Left" Height="23" Margin="160,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>

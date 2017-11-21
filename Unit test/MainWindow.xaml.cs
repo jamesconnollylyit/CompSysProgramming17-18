@@ -20,6 +20,8 @@ namespace Unit_test
     /// </summary>
     public partial class MainWindow : Window
     {
+        int firstNumber = 0;
+        int secondNumber = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -27,17 +29,19 @@ namespace Unit_test
 
 
 
-       private int AddTwoNumbers (int firstNumber, int secondNumber)
+       public int AddTwoNumbers (int firstNumber, int secondNumber)
         {
             int total = 0;
+            if (firstNumber <0 || secondNumber < 0)
+            {
+                return -1;
+            }          
             total = firstNumber + secondNumber;
-            return total;
+            return firstNumber + secondNumber;
         }
 
-        private void btnAdd_Click(object sender, RoutedEventArgs e)
-        {
-            int firstNumber = Convert.ToInt16(tbxFirstNumber.Text);
-            int secondNumber = Convert.ToInt16(tbxSecondNumber.Text);
+        public void btnAdd_Click(object sender, RoutedEventArgs e)
+        {           
             int result = AddTwoNumbers(firstNumber, secondNumber);
             DisplayResult(result);
         }
@@ -50,6 +54,16 @@ namespace Unit_test
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void tbxFirstNumber_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            firstNumber = Convert.ToInt16(tbxFirstNumber.Text);
+        }
+
+        private void tbxSecondNumber_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            secondNumber = Convert.ToInt16(tbxSecondNumber.Text);
         }
     }
 }
